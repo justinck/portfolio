@@ -36,7 +36,7 @@
             margin: 0 auto;
             position: relative;
             overflow: hidden;
-            padding: 0 4%;
+            padding: 1px 4%;
 
             .no-touch & {
                 @include transform(translateZ(0));
