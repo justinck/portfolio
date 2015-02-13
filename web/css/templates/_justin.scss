@@ -1,0 +1,83 @@
+.copy {
+    text-transform: uppercase;
+    font-size: rem(12);
+    letter-spacing: rem(1.4);
+    font-weight: 100;
+    line-height: 1.8;
+
+    .copy__bold {
+        font-weight: bold;
+    }
+}
+
+.layout {
+    @include size(100vw 100vh);
+}
+
+.links {
+    @include position(absolute, 50% null null 50%);
+    @include transform(translate(-50%, -50%));
+    width: 70%;
+
+    @include media($tablet) {
+        width: 45%;
+    }
+
+    a {
+        position: relative;
+        display: block;
+        margin-bottom: 13%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        > * {
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            padding: 0 4%;
+
+            .no-touch & {
+                @include transform(translateZ(0));
+
+                &::before {
+                    @include transition(transform 0.5s cubic-bezier(0.860, 0, 0.07, 1));
+                    @include position(absolute, 50% null null 0);
+                    @include transform(translate(0, -50%));
+                    background-color: $black;
+                    content: '';
+                    display: block;
+                    height: 57.5%;
+                    width: 100%;
+                }
+
+                &:hover {
+                    &::before {
+                        @include transform(translate(110%, -50%));
+                    }
+                }
+            }
+        }
+
+        img {
+            display: block;
+        }
+
+        &.email {
+            > * {
+                width: 70%;
+            }
+        }
+    }
+}
+
+.top {
+    @include position(absolute, 22px 0 null 0);
+    text-align: center;
+}
+
+.bottom {
+    @include position(absolute, null 0 22px 0);
+    text-align: center;
+}

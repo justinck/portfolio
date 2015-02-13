@@ -1,0 +1,36 @@
+{
+  "name": "twofivesix2015",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zachrbrown/twofivesix2015.git"
+  },
+  "version": "0.0.0",
+  "devDependencies": {
+    "chalk": "^0.4.0",
+    "grunt": "^0.4.4",
+    "grunt-aws-s3": "^0.10.4",
+    "grunt-contrib-imagemin": "~0.7.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-requirejs": "~0.4.4",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-symlink": "^0.3.0",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-exec": "~0.4.2",
+    "grunt-jscs-checker": "^0.6.1",
+    "grunt-newer": "~0.7.0",
+    "grunt-scss-lint": "^0.1.12",
+    "grunt-text-replace": "^0.4.0",
+    "jscs": "1.4.3",
+    "jshint": "^2.5.2",
+    "matchdep": "^0.3.0",
+    "ua5-frontend-standards": "^0.0.4",
+    "underscore": "^1.6.0"
+  },
+  "dependencies": {
+    "grunt-contrib-symlink": "^0.3.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}

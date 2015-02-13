@@ -1,0 +1,6 @@
+@import '_neat-helpers';
+
+$tablet: new-breakpoint(min-width 768px);
+$desktop-small: new-breakpoint(min-width 960px);
+$desktop: new-breakpoint(min-width 1100px);
+$desktop-large: new-breakpoint(min-width 1440px);

@@ -1,0 +1,18 @@
+{
+  "name": "zachrbrown/twofivesix2015",
+  "version": "0.0.0",
+  "main": "bower.json",
+  "dependencies": {
+    "backbone.marionette": "~2.3.0",
+    "bourbon": "~4.0.1",
+    "bootstrap-sass-official": "~3.1",
+    "modernizr": "~2.8.1",
+    "handlebars": "~2.0.0",
+    "requirejs": "~2.1.11",
+    "requirejs-handlebars": "jfparadis/requirejs-handlebars",
+    "requirejs-text": "~2.0.12",
+    "marionette.viewrouter": "~0.0.0",
+    "neat": "~1.7.1",
+    "gsap": "~1.15.0"
+  }
+}
